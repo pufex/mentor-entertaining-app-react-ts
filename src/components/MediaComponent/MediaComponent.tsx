@@ -12,7 +12,6 @@ const MediaComponent = ({
     category, 
     audiences,
     isBookmarked,
-    isTrending,
     thumbnail
 }:MediaComponentProps): React.ReactElement => {
 
