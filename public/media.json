@@ -1,0 +1,112 @@
+[
+    {
+        "id": "3",
+        "title": "The Great Lands",
+        "year": "2019",
+        "category": "Movie",
+        "audiences": "PG",
+        "isTrending": false,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/3.jpg"
+    },
+    {
+        "id": "4",
+        "title": "The Diary",
+        "year": "2019",
+        "category": "TV Series",
+        "audiences": "PG",
+        "isTrending": false,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/4.jpg"
+    },
+    {
+        "id": "5",
+        "title": "Earth's Untouched",
+        "year": "2017",
+        "category": "Movie",
+        "audiences": "18+",
+        "isTrending": false,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/5.jpg"
+    },
+    {
+        "id": "6",
+        "title": "During The Hunt",
+        "year": "2016",
+        "category": "TV Series",
+        "audiences": "PG",
+        "isTrending": false,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/6.jpg"
+    },
+    {
+        "id": "7",
+        "title": "No Land Beyond",
+        "year": "2019",
+        "category": "Movie",
+        "audiences": "E",
+        "isTrending": false,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/7.jpg"
+    },
+    {
+        "id": "8",
+        "title": "Autosport The Series",
+        "year": "2016",
+        "category": "TV Series",
+        "audiences": "PG",
+        "isTrending": false,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/8.jpg"
+    },
+    {
+        "id": "9",
+        "title": "Same Answer II",
+        "year": "2017",
+        "category": "Movie",
+        "audiences": "E",
+        "isTrending": false,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/9.jpg"
+    },
+    {
+        "id": "10",
+        "title": "Below Echo",
+        "year": "2016",
+        "category": "TV Series",
+        "audiences": "PG",
+        "isTrending": false,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/10.jpg"
+    },
+    {
+        "id": "0",
+        "title": "Beyond Earth",
+        "year": "2019",
+        "category": "Movie",
+        "audiences": "PG",
+        "isTrending": true,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/0.jpg"
+    },
+    {
+        "id": "1",
+        "title": "Bottom Gear",
+        "year": "2021",
+        "category": "Movie",
+        "audiences": "PG",
+        "isTrending": true,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/1.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Undiscovered Cities",
+        "year": "2019",
+        "category": "TV Series",
+        "audiences": "E",
+        "isTrending": true,
+        "isBookmaked": false,
+        "thumbnail": "../src/assets/thumbnails/2.jpg"
+    }
+]

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+  min-width: 0;
+}
+
+body, html, #root{
+  width: 100%;
+  min-height: 100vh;
+}
+
+body.dark{
+  --background-color: hsl(240, 29%, 17%);
+  --element-color: hsl(238, 24%, 25%);
+  --element-color-2: rgb(106, 106, 174);
+  --text-color: hsl(0, 0%, 100%);
+  --border-color: hsla(240, 44%, 7%, 0.507);
+}
+
+body{
+  --logo-color: rgb(255, 67, 61);
+  background-color: var(--background-color);
+}
+
+#root{
+  padding-left: 7rem;
+  padding-top: 2rem;
+}
+
+.btn{
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+.size-transition{
+  transition: 300ms scale linear;
+}
+
+.size-transition:hover{
+  scale: 1.05 
+}
+
+.size-transition:active{
+  transition: 50ms scale linear;
+  scale: .95; 
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem !important;
+}
+
+.section__heading{
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.trendings-container{
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 0.5rem 1rem;
+  padding-bottom: 2rem;
+}
+
+.trendings-container::-webkit-scrollbar{
+  appearance: none;
+  height: 8px;
+  background-color: var(--element-color);
+  border-radius: 100vh;
+}
+
+.trendings-container::-webkit-scrollbar-thumb{
+  background-color: var(--element-color-2);
+  border-radius: 100vh;
+  cursor: default;
+}
+
+
+.trendings-container > *{
+  flex-shrink: 0;
+}
+
+.section__medias--grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.empty--message{
+  font-size: 2rem;
+  color: var(--text-color);
+  width: 100%;
+  opacity: .75;
+}

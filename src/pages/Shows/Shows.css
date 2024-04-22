@@ -1,0 +1,6 @@
+.shows__main{
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
