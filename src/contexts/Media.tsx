@@ -34,7 +34,6 @@ const Media = ({children}:MediaProps): React.ReactElement => {
     const [media, setMedia] = useState<MediaType[]>([]);
 
     const switchBookmark = (id: MediaType["id"]) => {
-        console.log(id)
         let newMedia = media.slice();
         newMedia = newMedia.map((item) => {
             console.log(item.id)
@@ -52,10 +51,6 @@ const Media = ({children}:MediaProps): React.ReactElement => {
             .then((data) => setMedia(data))
             .catch((err) => console.error(err))
     }, [])
-  
-    useEffect(() => {
-        console.log(media)
-    }, [media])
 
     return <MediaContext.Provider
         value={{

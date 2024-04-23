@@ -28,8 +28,13 @@ body{
 }
 
 #root{
-  padding-left: 7rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-left: 2rem;
   padding-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .btn{
@@ -105,9 +110,25 @@ body{
   padding-bottom: 2rem;
 }
 
+.section__medias--grid > * {
+  max-width: 100% !important;
+}
+
 .empty--message{
   font-size: 2rem;
   color: var(--text-color);
   width: 100%;
   opacity: .75;
+}
+
+@media (min-width: 1000px){
+  .section__medias--grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 750px){
+  .section__medias--grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

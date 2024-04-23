@@ -1,8 +1,6 @@
 .nav{
-    position: fixed;
-    top: 50%;
-    left: 1.5rem;
-    transform: translateY(-50%);
+    position: sticky;
+    top: 2rem;
     height: calc(100vh - 4rem);
     width: 5.5rem;
     border-radius: 20px;
