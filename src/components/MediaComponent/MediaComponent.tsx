@@ -2,6 +2,7 @@ import { useIconsContext } from "../../contexts/Icons"
 import type { MediaType } from "../../contexts/Media"
 import Bookmark from "../Bookmark/Bookmark"
 import "./MediaComponent.css"
+import { useNavigate } from "react-router-dom"
 
 type MediaComponentProps = MediaType
 
@@ -15,9 +16,14 @@ const MediaComponent = ({
     thumbnail
 }:MediaComponentProps): React.ReactElement => {
 
+    let navigate = useNavigate();
+
     const {MdMovie, PiTelevisionSimpleFill} = useIconsContext()
 
-    return <div className="media-container">
+    return <div 
+        className="media-container"
+        onClick={() => navigate(`/trailer/${id}`)}
+    >
         <Bookmark
             id={id}
             active={isBookmarked}

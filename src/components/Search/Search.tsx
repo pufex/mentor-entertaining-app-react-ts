@@ -5,34 +5,25 @@ type SearchProps = {
     placeholder: string,
     search: string,
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
-    onSearch: () => void,
 }
 
 const Search = ({
     placeholder, 
     search, 
-    onChange,
-    onSearch
+    onChange
 }: SearchProps): React.ReactElement => {
 
     const { FiSearch } = useIconsContext();
 
-    return <form
+    return <div
         className="search-container"
-        onSubmit={(e) => {
-            e.preventDefault();
-            onSearch()
-        }}
     >
-        <button
-            className="btn search__button"
-            type="submit"
-        >
+        <div className="search__button">
             <FiSearch 
                 size={40}
                 color="white"
             />
-        </button>
+        </div>
         <input 
             className="search-input"
             type="text"
@@ -40,7 +31,7 @@ const Search = ({
             placeholder={placeholder}
             onChange={onChange}
         />
-    </form>
+    </div>
 }
 
 export default Search

@@ -1,4 +1,3 @@
-import "./assets/App.css"
 import {Route, Routes} from "react-router-dom"
 
 import Nav from './components/Nav/Nav'
@@ -7,9 +6,13 @@ import Home from './pages/Home/Home'
 import Movies from './pages/Movies/Movies'
 import Shows from './pages/Shows/Shows'
 import Bookmarked from './pages/Bookmarked/Bookmarked'
+import Trailer from './pages/Trailer/Trailer'
+import NotFound from './pages/NotFound/NotFound'
 
 import Icons from './contexts/Icons'
 import Media from "./contexts/Media"
+
+import "./assets/App.css"
 
 function App() {
 
@@ -32,6 +35,14 @@ function App() {
         <Route 
           path='/bookmarked'
           element={<Bookmarked />}
+        />
+        <Route 
+          path='/trailer/:id'
+          element={<Trailer />}
+        />
+        <Route 
+          path='/*'
+          element={<NotFound />}
         />
       </Routes>
     </Icons>

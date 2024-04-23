@@ -13,6 +13,7 @@ export type MediaType = {
     isTrending: boolean,
     isBookmarked: boolean,
     thumbnail: string,
+    trailer: string,
 }
 
 export type MediaContextType = {

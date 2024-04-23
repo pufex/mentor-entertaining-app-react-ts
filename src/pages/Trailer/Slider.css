@@ -1,0 +1,28 @@
+.slider{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.slider__filled{
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.slider__circle{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    height: 200%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
+.slider__to-fill{
+    flex-shrink: 1;
+}
+
+

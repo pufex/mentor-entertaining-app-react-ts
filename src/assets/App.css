@@ -121,6 +121,17 @@ body{
   opacity: .75;
 }
 
+.section__medias--grid:has(.search-fail){
+  display: block
+}
+
+.search-fail{
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
 @media (min-width: 1000px){
   .section__medias--grid{
     grid-template-columns: repeat(3, 1fr);

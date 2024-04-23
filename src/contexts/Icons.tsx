@@ -6,6 +6,10 @@ import { PiTelevisionSimpleFill } from "react-icons/pi";
 import { FaBookmark } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import { FaRegBookmark } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
+import { FaPause } from "react-icons/fa";
+import { IoPlayBack } from "react-icons/io5";
+import { IoPlayForward } from "react-icons/io5";
 import type { IconType } from "react-icons";
 
 export type IconsProps = {
@@ -20,6 +24,10 @@ export type IconsContextType = {
     FaBookmark: IconType,
     FiSearch: IconType,
     FaRegBookmark: IconType,
+    FaPlay: IconType,
+    FaPause: IconType,
+    IoPlayBack: IconType,
+    IoPlayForward: IconType,
 }
 
 export const IconsContext = createContext<IconsContextType | null>(null);
@@ -40,7 +48,11 @@ const Icons = ({children}:IconsProps) => {
         PiTelevisionSimpleFill: PiTelevisionSimpleFill,
         FaBookmark: FaBookmark,
         FiSearch: FiSearch,
-        FaRegBookmark: FaRegBookmark
+        FaRegBookmark: FaRegBookmark,
+        FaPlay: FaPlay,
+        FaPause: FaPause,
+        IoPlayBack: IoPlayBack,
+        IoPlayForward: IoPlayForward,
     }}
   >
     {children}
