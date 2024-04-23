@@ -139,6 +139,13 @@ body{
 }
 
 @media (max-width: 750px){
+
+  #root{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
   .section__medias--grid{
     grid-template-columns: repeat(1, 1fr);
   }

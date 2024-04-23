@@ -5,3 +5,10 @@
     gap: 1rem;
     padding-inline: 2rem;
 }
+
+@media (max-width: 750px){
+    .bookmarked__main{
+        padding-top: 9rem;
+        padding-inline: 2rem;
+    }
+}

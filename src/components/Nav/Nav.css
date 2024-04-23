@@ -12,6 +12,7 @@
     justify-content: space-between;
     border: 2px solid var(--border-color);
     box-shadow: 0 0 6px var(--border-color);
+    z-index: 100;
 }
 
 .nav--top{
@@ -94,6 +95,29 @@
     transition: 100ms;
 }
 
-.nav__profile:hover{
+@media (max-width: 750px){
+    .nav{
+        position: fixed;
+        height: 5.5rem;
+        left: 2rem;
+        width: calc(100% - 4rem);
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .nav--top{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav__links{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .nav__profile{
+        width: auto !important;
+        height: 4rem;
+        aspect-ratio: 1;
+    }
 }
